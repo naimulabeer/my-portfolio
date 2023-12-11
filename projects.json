@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/sp4mBBY/project1.jpg",
+    "title": "Guest Glide",
+    "description": "Developed a Hotel Management Web Application using MERN stack. Features include stunning homepage visuals, special offers updates, secure user authentication, intuitive room booking with date picker, user reviews, and responsive design. Implemented a custom 404 page, access control, JWT token authorization for security, and hidden credentials for data protection. Elevate the hotel booking experience with a visually engaging, user-friendly, and secure platform.",
+    "technologies": [
+      "React",
+      "Express",
+      "Firebase",
+      "JWT",
+      "SCSS",
+      "MongoDB",
+      "Aos"
+    ],
+    "liveLink": "https://guest-glider.web.app/",
+    "codeLink": "https://github.com/naimulabeer/guest-glide-client"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/P1WGr9z/project2.jpg",
+    "title": "Craft Clothing",
+    "description": "Created a dynamic e-commerce website, leverages User Interface and Authentication. Seamlessly explore diverse clothing categories, effortlessly adding items to cart through Google login. Enjoy an intuitive shopping experience on this platform, where a user-friendly interface meets the convenience of secure authentication.",
+    "technologies": [
+      "React",
+      "React Router",
+      "SCSS",
+      "Firebase",
+      "Styled Components"
+    ],
+    "liveLink": "https://dancing-selkie-486bfa.netlify.app/",
+    "codeLink": "https://github.com/naimulabeer/craft-clothing"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/pZVmnNm/project3.jpg",
+    "title": "Hackathon Techhub",
+    "description": "The Hackathon TechHub Website is your go-to for upcoming hackathons, seamless registration, and project submissions. Explore curated events, engage with insightful blog posts, and discover staff-picked projects. With user authentication via Firebase and dynamic content using JSON data files, it's a user-friendly hub for hackathon enthusiasts.",
+    "technologies": [
+      "React",
+      "React Router",
+      "Aos",
+      "Firebase",
+      "Tailwind CSS"
+    ],
+    "liveLink": "https://hackathon-event-d9255.web.app/",
+    "codeLink": "https://github.com/naimulabeer/hackathon-techhub"
+  }
+]

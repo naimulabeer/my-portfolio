@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Title from "../components/Global/Title";
 
 // Import skills images

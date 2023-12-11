@@ -60,7 +60,7 @@ function NavBar() {
             </ul>
           </div>
           <div className="flex items-center gap-2">
-            <img className="w-10 h-10" src="/src/assets/logo.svg" alt="logo" />
+            <img className="w-10 h-10" src="/logo.svg" alt="logo" />
             <a className="md:text-lg text-xs uppercase">Naimul Abeer</a>
           </div>
         </div>
