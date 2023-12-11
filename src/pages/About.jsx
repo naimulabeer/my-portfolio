@@ -1,9 +1,10 @@
 import { FaCode, FaPaintBrush } from "react-icons/fa";
+import Title from "../components/Global/Title";
 
 function About() {
   return (
     <div id="about" className="text-center py-12 mt-10">
-      <h1 className="text-3xl font-bold mb-6">About Me</h1>
+      <Title heading="About Me" />
 
       <div className="mb-6">
         <img

@@ -23,3 +23,26 @@
 ::-webkit-scrollbar-corner {
   background: rgba(26, 20, 26, 0.6);
 }
+
+.progress-wheel {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+.progress-wheel circle {
+  stroke-dashoffset: 0;
+  stroke-width: 30%;
+  fill: none;
+}
+
+.progress-wheel .bg {
+  stroke: #ff0066;
+  opacity: 0.2;
+}
+
+.progress-wheel .progress {
+  stroke: #ff0066;
+  stroke-dasharray: 0, 1;
+}
