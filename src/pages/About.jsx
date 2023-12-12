@@ -1,5 +1,6 @@
 import { FaCode, FaPaintBrush } from "react-icons/fa";
 import Title from "../components/Global/Title";
+import avatarImage from "../assets/avatarImage.png";
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
 
       <div className="mb-6">
         <img
-          src="/src/assets/avatarImage.png"
+          src={avatarImage}
           alt="Avatar"
           className="rounded-full w-40 h-40 mx-auto"
         />
