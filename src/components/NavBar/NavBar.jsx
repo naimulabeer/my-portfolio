@@ -1,33 +1,34 @@
 import { HashLink as Link } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 function NavBar() {
   const navOptions = (
     <>
-      <li>
+      <motion.li whileHover={{ color: "#718096" }}>
         <Link smooth to="/#about">
           About
         </Link>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li whileHover={{ color: "#718096" }}>
         <Link smooth to="/#skills">
           Skills
         </Link>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li whileHover={{ color: "#718096" }}>
         <Link smooth to="/#work">
           Work
         </Link>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li whileHover={{ color: "#718096" }}>
         <Link smooth to="/#education">
           Education
         </Link>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li whileHover={{ color: "#718096" }}>
         <Link smooth to="/#contact">
           Contact
         </Link>
-      </li>
+      </motion.li>
     </>
   );
 
@@ -60,8 +61,12 @@ function NavBar() {
             </ul>
           </div>
           <div className="flex items-center gap-2">
-            <img className="w-10 h-10" src="/logo.svg" alt="logo" />
-            <a className="md:text-lg text-xs uppercase">Naimul Abeer</a>
+            <motion.img
+              animate={{ textShadow: "0 0 12px #313131" }}
+              className="w-12 h-12"
+              src="/abeerlogo.png"
+              alt="logo"
+            />
           </div>
         </div>
         <div className="navbar-end hidden lg:flex">

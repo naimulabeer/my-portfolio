@@ -35,3 +35,11 @@
 .icon:hover {
   transform: scale(1.1) translateY(-5px);
 }
+
+.loader {
+  width: 10px;
+  height: 10px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: #fff;
+}

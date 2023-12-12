@@ -4,6 +4,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { Parallax } from "react-parallax";
+import { Typewriter } from "react-simple-typewriter";
 
 function Banner() {
   return (
@@ -21,23 +22,23 @@ function Banner() {
         >
           <h1 className="lg:text-5xl md:text-3xl font-light mb-5">
             Hi, I'm{" "}
-            <motion.span
-              animate={{
-                color: "#09318a",
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                delay: 0.2,
-                type: "tween",
-                stiffness: 120,
-              }}
-            >
-              Naimul Haq Abeer
-            </motion.span>
+            <span className="text-[#0fa461e9] font-bold">
+              <Typewriter
+                words={["Naimul Haq Abeer"]}
+                cla
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </h1>
-          <h3 className="text-lg text-slate-300">Web Developer</h3>
         </motion.div>
+        <h3 className="text-lg md:text-2xl text-slate-300 text-center absolute md:top-[45vh] top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          Web Developer
+        </h3>
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
           <Link
             to="about"
