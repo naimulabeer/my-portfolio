@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Title from "../components/Global/Title";
+import { motion } from "framer-motion";
 
 // Import skills images
 import Skill1 from "../assets/skills/react.svg";
@@ -53,7 +54,12 @@ function Skills() {
       <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 lg:w-1/2 mx-auto gap-10 md:p-10">
         {skillImages.map((image, index) => (
           <div key={index} className="items-center">
-            <img
+            <motion.img
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
               src={image}
               alt={`Skill ${index + 1}`}
               className="w-16 h-16 mx-auto transition-opacity duration-300 group-hover:opacity-80 cursor-pointer"

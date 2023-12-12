@@ -1,5 +1,6 @@
 import projectsData from "/projects.json";
 import Title from "../components/Global/Title";
+import { motion } from "framer-motion";
 
 function Work() {
   return (
@@ -34,22 +35,32 @@ function Work() {
               ))}
             </div>
             <div className="flex gap-5 mt-4 w-full">
-              <a
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 10px rgb(23, 185, 188)",
+                }}
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-[#00b7c7] font-bold border-2 border-[#00b7c7] px-6 py-2 hover:bg-[#00b7c7] hover:text-white transition-all duration-300"
+                className="bg-black text-[#00b7c7] font-bold  px-6 py-2 hover:bg-[#00b7c7] hover:text-white transition-all duration-300"
               >
                 Live
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 10px rgb(23, 185, 188)",
+                }}
                 href={project.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-[#00b7c7] font-bold border-2 border-[#00b7c7] px-6 py-2 hover:bg-[#00b7c7] hover:text-white transition-all duration-300"
+                className="bg-black text-[#00b7c7] font-bold px-6 py-2 hover:bg-[#00b7c7] hover:text-white transition-all duration-300"
               >
                 Code
-              </a>
+              </motion.a>
             </div>
           </div>
           {index < projectsData.length - 1 && (
