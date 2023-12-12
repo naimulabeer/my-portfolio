@@ -1,0 +1,19 @@
+.input-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.floating-label {
+  top: -24px;
+  left: -3px;
+  font-size: 14px;
+  color: #00b7c7;
+}
