@@ -10,7 +10,7 @@ function Banner() {
   return (
     <div className="relative h-60 md:h-[80vh]">
       <motion.div
-        className="absolute md:left-[40vw] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
+        className="absolute md:left-[40vw] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center "
         initial={{ y: "100vw" }}
         animate={{ y: -50, x: -100 }}
         transition={{ type: "spring", delay: 0.5 }}
@@ -30,10 +30,10 @@ function Banner() {
           </span>
         </h1>
       </motion.div>
-      <h3 className="text-lg md:text-2xl text-slate-300 text-center absolute md:top-[45vh] top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h3 className="text-lg md:text-2xl text-center absolute md:top-[45vh] top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         Web Developer
       </h3>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <Link
           to="about"
           smooth

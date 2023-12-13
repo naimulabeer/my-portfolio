@@ -7,7 +7,7 @@ function Footer() {
   };
 
   return (
-    <footer className="border-t border-t-slate-100 p-6 flex flex-col items-center text-white text-center">
+    <footer className="border-t border-t-slate-100 p-6 flex flex-col items-center text-center">
       <div className="flex justify-center space-x-4 mb-4">
         <a
           href="https://www.facebook.com/naimul.abeer"

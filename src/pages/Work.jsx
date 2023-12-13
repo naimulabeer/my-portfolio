@@ -26,10 +26,7 @@ function Work() {
             <p className="text-gray-700 my-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 py-2">
               {project.technologies.map((tech, index) => (
-                <div
-                  key={index}
-                  className="border bg-slate-600 text-slate-300 rounded-md p-2"
-                >
+                <div key={index} className="border bg-slate-600 rounded-md p-2">
                   {tech}
                 </div>
               ))}
@@ -38,26 +35,26 @@ function Work() {
               <motion.a
                 whileHover={{
                   scale: 1.1,
-                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  textShadow: "0px 0px 8px #fafafa",
                   boxShadow: "0px 0px 10px rgb(23, 185, 188)",
                 }}
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-[#00b7c7] font-bold  px-6 py-2 hover:bg-[#00b7c7] hover:text-white transition-all duration-300"
+                className="bg-black text-[#00b7c7] font-bold  px-6 py-2 hover:bg-[#00b7c7] hover:text-[#fafafa] transition-all duration-300"
               >
                 Live
               </motion.a>
               <motion.a
                 whileHover={{
                   scale: 1.1,
-                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  textShadow: "0px 0px 8px #fafafa",
                   boxShadow: "0px 0px 10px rgb(23, 185, 188)",
                 }}
                 href={project.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-[#00b7c7] font-bold px-6 py-2 hover:bg-[#00b7c7] hover:text-white transition-all duration-300"
+                className="bg-black text-[#00b7c7] font-bold px-6 py-2 hover:bg-[#00b7c7] hover:text-[#fafafa] transition-all duration-300"
               >
                 Code
               </motion.a>

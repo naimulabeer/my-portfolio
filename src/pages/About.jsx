@@ -15,7 +15,7 @@ function About() {
         />
       </div>
 
-      <p className="text-slate-700 max-w-xl mx-auto mb-8">
+      <p className=" max-w-xl mx-auto mb-8">
         Recent Computer Science graduate from{" "}
         <span className=" text-amber-500">United International University</span>{" "}
         and web development enthusiast with a Mediator personality. Specializing
