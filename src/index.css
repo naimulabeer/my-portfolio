@@ -8,6 +8,40 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--ash-black);
+  --accent: var(--white);
+
+  background-color: var(--background);
+
+  color: var(--white);
+  padding: 20px;
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0.3;
+}
+
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
@@ -34,12 +68,4 @@
 
 .icon:hover {
   transform: scale(1.1) translateY(-5px);
-}
-
-.loader {
-  width: 10px;
-  height: 10px;
-  margin: 40px auto;
-  border-radius: 50%;
-  background: #fff;
 }

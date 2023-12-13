@@ -81,7 +81,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="h-screen bg-[#F0F0F0] flex flex-col items-center justify-center"
+      className="h-screen flex flex-col items-center justify-center"
     >
       <div className="mb-10 flex flex-col gap-4 items-center">
         <FiMail className="text-4xl mb-2 text-[#00b7c7]" />

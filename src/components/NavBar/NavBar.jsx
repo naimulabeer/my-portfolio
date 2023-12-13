@@ -1,7 +1,29 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 function NavBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [logoImage, setLogoImage] = useState("/abeerlogo.png");
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) {
+      setIsScrolled(true);
+      setLogoImage("/abeerlogowhite.png");
+    } else {
+      setIsScrolled(false);
+      setLogoImage("/abeerlogo.png");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navOptions = (
     <>
       <motion.li whileHover={{ color: "#718096" }}>
@@ -34,7 +56,11 @@ function NavBar() {
 
   return (
     <div>
-      <div className="navbar fixed z-10 bg-opacity-10 bg-slate-900 text-white md:px-10 py-2 md:py-5">
+      <div
+        className={`navbar fixed z-10 ${
+          isScrolled ? "bg-black" : "bg-opacity-10 bg-slate-900"
+        } text-white md:px-10 py-2 `}
+      >
         <div className="navbar-start ">
           <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -63,8 +89,8 @@ function NavBar() {
           <div className="flex items-center gap-2">
             <motion.img
               animate={{ textShadow: "0 0 12px #313131" }}
-              className="w-12 h-12"
-              src="/abeerlogo.png"
+              className="w-16 h-16"
+              src={logoImage}
               alt="logo"
             />
           </div>

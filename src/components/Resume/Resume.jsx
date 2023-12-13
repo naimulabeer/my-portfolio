@@ -5,7 +5,7 @@ import { Parallax } from "react-parallax";
 
 function Resume() {
   return (
-    <Parallax bgImage={resumeImage} strength={500} blur={5}>
+    <Parallax bgImage={resumeImage} strength={300}>
       <div className="h-64 flex items-center justify-center text-white">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center">
