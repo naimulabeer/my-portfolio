@@ -112,3 +112,29 @@ circle {
 .animate-color-change {
   animation: colorChange 10s infinite;
 }
+
+.refresh {
+  padding: 5px;
+  position: absolute;
+  border: 1px dotted var(--accent);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.refresh path {
+  fill: var(--accent);
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--ash-black);
+}
