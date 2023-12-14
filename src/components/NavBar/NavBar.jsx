@@ -35,9 +35,11 @@ function NavBar() {
   return (
     <div>
       <div
-        className={"navbar fixed z-10 bg-opacity-10 bg-slate-900 md:px-10 py-2"}
+        className={
+          "mt-[90px] navbar fixed z-10 md:px-20 lg:px-32 lg:py-[10px] lg:ml-[100px]"
+        }
       >
-        <div className="navbar-start ">
+        <div className="navbar-start">
           <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -66,7 +68,7 @@ function NavBar() {
             <motion.img
               animate={{ textShadow: "0 0 12px #313131" }}
               className="w-16 h-16"
-              src="/abeerlogo.png"
+              src="/abeerlogowhite.png"
               alt="logo"
             />
           </div>

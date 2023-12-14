@@ -4,10 +4,10 @@ import avatarImage from "../assets/avatarImage.png";
 
 function About() {
   return (
-    <div id="about" className="text-center py-12 mt-10">
+    <div id="about" className="text-center py-12 mt-10 mb-10">
       <Title heading="About Me" />
 
-      <div className="mb-6">
+      <div className="mb-10">
         <img
           src={avatarImage}
           alt="Avatar"
@@ -15,18 +15,21 @@ function About() {
         />
       </div>
 
-      <p className=" max-w-xl mx-auto mb-8">
-        Recent Computer Science graduate from{" "}
-        <span className=" text-amber-500">United International University</span>{" "}
-        and web development enthusiast with a Mediator personality. Specializing
-        in the MERN stack, driven by intuitive approach. With a feeling
-        orientation, crafting harmonious digital experiences and embracing
-        flexibility in a prospecting style. Currently immersed in mastering
-        Next.js, bringing a determined spirit to shape the future of web
-        development with innovation and accuracy.
-      </p>
-
-      <div className="border bg-slate-200 lg:w-1/3 md:w-1/2 mx-auto p-8">
+      <span className="border-l-2 border-[#00b7c7] inline-block h-fit md:h-44 animate-border">
+        <p className="max-w-xl mx-auto px-2 text text-left mb-8 ml-5 relative overflow-hidden">
+          Recent Computer Science graduate from{" "}
+          <span className="text-[#00b7c7]">
+            United International University
+          </span>{" "}
+          and web development enthusiast with a Mediator personality.
+          Specializing in the MERN stack, driven by an intuitive approach. With
+          a feeling orientation, crafting harmonious digital experiences and
+          embracing flexibility in a prospecting style. Currently immersed in
+          mastering Next.js, bringing a determined spirit to shape the future of
+          web development with innovation and accuracy.
+        </p>
+      </span>
+      <div className="lg:w-1/3 md:w-1/2 mx-auto p-8">
         <h2 className="text-xl font-bold mb-6">SELF PROCLAMATIONS:</h2>
 
         <div className="flex justify-around">

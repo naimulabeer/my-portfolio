@@ -13,7 +13,7 @@ body {
   --ash-black: #222;
   --white: #fafafa;
   --sky: #00ccff;
-  --green: #22dddd;
+  --green: #00b7c7;
   --blue: #1300ff;
   --dusk: #6600ff;
   --purple: #9900ff;
@@ -44,12 +44,12 @@ circle {
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
-  background: rgba(46, 35, 110, 0.43);
+  background: var(--background);
   -webkit-border-radius: 1ex;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(8, 66, 141, 0.652);
+  background: var(--green);
   -webkit-border-radius: 1ex;
 }
 
@@ -67,4 +67,48 @@ circle {
 
 .icon:hover {
   transform: scale(1.1) translateY(-5px);
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: var(--green);
+  }
+  25% {
+    border-color: var(--sky);
+  }
+  50% {
+    border-color: var(--green);
+  }
+  75% {
+    border-color: var(--sky);
+  }
+  100% {
+    border-color: var(--green);
+  }
+}
+
+.animate-border {
+  animation: borderAnimation 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: var(--green);
+  }
+  25% {
+    color: #084187ba;
+  }
+  50% {
+    color: var(--green);
+  }
+  75% {
+    color: #084187ba;
+  }
+  100% {
+    color: #00b7c7;
+  }
+}
+
+.animate-color-change {
+  animation: colorChange 10s infinite;
 }

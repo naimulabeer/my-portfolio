@@ -1,6 +1,4 @@
 import Title from "../components/Global/Title";
-import bannerImage from "../assets/banner/banner1.jpg";
-import { Parallax } from "react-parallax";
 
 const educationData = [
   {
