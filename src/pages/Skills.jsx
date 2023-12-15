@@ -42,7 +42,7 @@ function Skills() {
     <div id="skills" className="mt-10 text-center mb-10">
       <Title heading="Skills" />
 
-      <p className="my-4 px-2">
+      <p className="my-10 mx-auto px-2 w-1/3">
         I've been doing web development for about 3 years now, and I'm always
         eager to learn more in this fast-paced industry.
       </p>
