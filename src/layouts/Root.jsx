@@ -29,6 +29,7 @@ function Root() {
           style={{ pathLength: scaleX }}
         />
       </svg>
+
       <NavBar />
       <Banner />
       <About />

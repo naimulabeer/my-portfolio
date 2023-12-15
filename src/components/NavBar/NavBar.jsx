@@ -66,7 +66,11 @@ function NavBar() {
           </div>
           <div className="flex items-center gap-2">
             <motion.img
-              animate={{ textShadow: "0 0 12px #313131" }}
+              animate={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, 270, 270, 0],
+                borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+              }}
               className="w-16 h-16"
               src="/abeerlogowhite.png"
               alt="logo"
