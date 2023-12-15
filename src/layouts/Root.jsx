@@ -7,10 +7,28 @@ import Education from "../pages/Education";
 import Footer from "../pages/Footer";
 import Skills from "../pages/Skills";
 import Work from "../pages/Work";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 function Root() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
-    <div>
+    <>
+      <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+        <motion.circle
+          cx="50"
+          cy="50"
+          r="30"
+          pathLength="1"
+          className="indicator"
+          style={{ pathLength: scaleX }}
+        />
+      </svg>
       <NavBar />
       <Banner />
       <About />
@@ -20,7 +38,7 @@ function Root() {
       <Education />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

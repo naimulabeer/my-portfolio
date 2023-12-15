@@ -31,6 +31,18 @@ body {
   color: var(--white);
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+#progress {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  transform: rotate(-90deg);
+}
+
 circle {
   stroke-dashoffset: 0;
   stroke-width: 15%;
@@ -40,6 +52,10 @@ circle {
 .bg {
   stroke: var(--accent);
   opacity: 0.3;
+}
+
+#progress .indicator {
+  stroke: var(--green);
 }
 
 ::-webkit-scrollbar {
