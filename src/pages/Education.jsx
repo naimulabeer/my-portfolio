@@ -1,49 +1,76 @@
 import Title from "../components/Global/Title";
+import { Chrono } from "react-chrono";
 
-const educationData = [
+const items = [
   {
-    id: 1,
-    school: "Dhaka Residential Model College",
-    certificate: "Secondary School Certificate (SSC) in Science ",
-    graduationGPA: "Graduated with GPA: 5.00/5.00",
-    date: "2013",
+    title: "Dhaka Residential Model College",
+    cardTitle: "Dhaka Residential Model College",
+    cardSubtitle: "Secondary School Certificate (SSC) in Science.",
+    cardDetailedText: `I excelled academically, graduating with a perfect GPA of 5.00/5.00 in 2013. Actively involved in the Science Club, I showcased my passion for scientific exploration. Beyond academics, I thrived in sports, securing numerous prizes in competitive events and contributing to the vibrant sports culture of the school.`,
+    date: "May,2013",
   },
   {
-    id: 2,
-    school: "Dhaka Residential Model College ",
-    certificate: "Higher Secondary School Certificate (HSC)",
-    graduationGPA: "Graduated with GPA: 5.00/5.00",
-    date: "2015",
+    title: "Dhaka Residential Model College",
+    cardTitle: "Dhaka Residential Model College",
+    cardSubtitle: "Higher Secondary School Certificate (HSC).",
+    cardDetailedText: `In college, I also excelled academically, graduating with GPA: 5.00/5.00 in 2015. I maintained a dedicated academic focus, achieving academic excellence. Additionally, I immersed myself in the Computer Club, channeling my passion for technology and innovation. Simultaneously, I actively contributed to the cultural club, showcasing a well-rounded engagement in both academic and extracurricular pursuits.`,
+    date: "July,2015",
   },
   {
-    id: 3,
-    school: "United International University",
-    certificate: "BSC in Computer Science and Engineering",
-    date: "2023",
+    title: "United International University",
+    cardTitle: "United International University",
+    cardSubtitle: "BSC in Computer Science and Engineering (CSE)",
+    cardDetailedText: `During my university years, I evolved into a dedicated reader and honed my skills through active participation in hackathons. While initially taking things slow, my academic commitment intensified over time. Joining the computer club, I eagerly engaged in coding competitions, further enhancing my expertise and contributing to the tech community. `,
+    date: "May,2023",
   },
 ];
 
 function Education() {
   return (
-    <div id="education" className=" flex flex-col items-center justify-center">
-      <div className="mt-20">
-        <Title heading="Education" />
-      </div>
-      {educationData?.map((education) => (
-        <div
-          key={education?.id}
-          className="float-right flex flex-row items-center justify-between relative bg-[#1b1b1b] rounded-md m-2 p-6 w-1/2 opacity-85 transition-all hover:bg-[#434242] duration-300"
+    <div className="mb-10 mt-10 lg:ml-10">
+      <Title heading="Education" />
+      <div
+        id="education"
+        className="mt-20 lg:w-[100%] h-screen lg:px-20"
+        // style={{ width: "80%", height: "95vh", padding: "20px" }}
+      >
+        <Chrono
+          items={items}
+          mode="VERTICAL_ALTERNATING"
+          itemWidth={220}
+          flipLayout
+          hideControls
+          activeItemIndex={3}
+          cardHeight={250}
+          theme={{
+            primary: "#00b7c7",
+            secondary: "#00b7c7",
+            iconBackgroundColor: "#fafafa",
+            cardBgColor: "#86848461",
+            titleColor: "#fafafa",
+            titleColorActive: "#fafafa",
+            cardTitleColor: "#fafafa",
+            cardSubtitleColor: "#fafafa",
+            cardDetailsColor: "#fafafa",
+          }}
+          classNames="chrono-container"
         >
-          <div className="flex flex-col gap-5">
-            <h2 className="font-bold lg:text-lg">{education?.school}</h2>
-            <p className="text-sm">{education?.certificate}</p>
-            <p className="text-sm">{education?.graduationGPA}</p>
+          <div className="chrono-icons">
+            <img
+              src="https://img.icons8.com/ios/50/graduation-cap.png"
+              alt="school"
+            />
+            <img
+              src="https://img.icons8.com/ios/50/university.png"
+              alt="college"
+            />
+            <img
+              src="https://img.icons8.com/ios/50/motarboard.png"
+              alt="twitter"
+            />
           </div>
-          <div>
-            <p className="text-sm">{education?.date}</p>
-          </div>
-        </div>
-      ))}
+        </Chrono>
+      </div>
     </div>
   );
 }

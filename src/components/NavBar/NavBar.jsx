@@ -36,7 +36,7 @@ function NavBar() {
     <div>
       <div
         className={
-          "mt-[90px] navbar fixed z-10 md:px-20 lg:px-32 lg:py-[10px] lg:ml-[100px]"
+          "mt-[90px] navbar absolute z-10 md:px-20 lg:px-60 lg:py-[10px] "
         }
       >
         <div className="navbar-start">

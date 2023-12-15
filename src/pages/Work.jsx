@@ -14,11 +14,11 @@ function Work() {
   return (
     <div id="work" className="mt-10">
       <Title heading="Projects" />
-      <div className="flex flex-col lg:flex-row lg:px-[220px] mt-10">
+      <div className="flex flex-col lg:flex-row lg:px-[220px]">
         {/* Left side tabs */}
-        <div className="lg:w-1/3 mt-20 lg:-mr-20">
+        <div className="lg:w-1/3 mt-10 lg:-mr-[150px] lg:ml-[100px]">
           <h2 className="text-2xl font-bold p-4 mb-5">My Projects</h2>
-          <div className="border-t-2 border-l-2 rounded-tl-xl w-20 h-20 absolute left-45 border-[#00b7c7] lg:block hidden animate-border" />
+          <div className="border-t-2 border-l-2 rounded-tl-xl w-20 h-20 absolute left-45 border-[#00b7c7] lg:block hidden animate-border border-container" />
           <div className="flex lg:flex-col absolute lg:px-5 lg:py-5">
             {projectsData.map((project) => (
               <motion.div
